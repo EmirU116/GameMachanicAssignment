@@ -6,9 +6,10 @@ using UnityEngine;
 public class ThridpersonMovement : MonoBehaviour
 {
     public CharacterController controller;      //Motor that drives our player
-
+    public Vector3 movementVector = Vector3.zero;
     public float speed = 6f;        //Movement speed
     private Vector3 mVelocity;      //Movemnet
+    public Vector3 moveDir;
 
     // Update is called once per frame
     void Update()
