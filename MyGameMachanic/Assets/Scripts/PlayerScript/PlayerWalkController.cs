@@ -1,11 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerWalkController : MonoBehaviour
 {
-    public Rigidbody myRigidbody;
-    public float moveSpeed = -5f;
+    [SerializeField] private Rigidbody myRigidbody;
+    [SerializeField] private float moveSpeed = -5f;
+
+    [SerializeField] private PlayerInputController playerInputController;
 
     // Update is called once per frame
     void Update()

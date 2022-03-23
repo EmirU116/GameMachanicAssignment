@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class PlayerImmediateJumpController : MonoBehaviour
 {
-    public Rigidbody myRigidbody;
+    [SerializeField] private Rigidbody myRigidbody;
+    [SerializeField] private PlayerInputController playerInputController;
 
-    public float jumpforce = 100f;
+    [SerializeField] private float jumpforce = 100f;
 
     private void Update()
     {
