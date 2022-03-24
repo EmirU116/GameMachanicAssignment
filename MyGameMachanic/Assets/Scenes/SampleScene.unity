@@ -397,6 +397,7 @@ GameObject:
   - component: {fileID: 697175489}
   - component: {fileID: 697175491}
   - component: {fileID: 697175492}
+  - component: {fileID: 697175494}
   - component: {fileID: 697175493}
   m_Layer: 0
   m_Name: Thrid Person Player
@@ -464,11 +465,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 697175488}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6f91c91a502c5554b86dc315296a99ad, type: 3}
+  m_Script: {fileID: 11500000, guid: 4b92985858f58f34b99ba8f1a2dc08dd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 697175492}
   moveSpeed: 5
+--- !u!114 &697175494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 697175488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f517e3083aab2c44ba18fe80b3d6972b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myRigidbody: {fileID: 697175492}
   jumpForce: 500
 --- !u!1 &705507993
 GameObject:
