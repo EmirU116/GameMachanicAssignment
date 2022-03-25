@@ -169,7 +169,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 0.70520234, y: 1}
+    m_SensorSize: {x: 0.770017, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -294,6 +294,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7752936488083719473, guid: 35832571727f79b429e3083762c654bd, type: 3}
   m_PrefabInstance: {fileID: 7752936487438190832}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &697175493 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7752936488083719477, guid: 35832571727f79b429e3083762c654bd, type: 3}
+  m_PrefabInstance: {fileID: 7752936487438190832}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c9edbc6a676cf44dbb7c436e2076a32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -756,5 +767,9 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7752936488275379072, guid: 35832571727f79b429e3083762c654bd, type: 3}
+      propertyPath: playerInput
+      value: 
+      objectReference: {fileID: 697175493}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35832571727f79b429e3083762c654bd, type: 3}
