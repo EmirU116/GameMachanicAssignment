@@ -15,7 +15,16 @@ public class PlayerWalk : MonoBehaviour
     {
         //Set move velocity
         //Preferably interact with physics in FixedUpdate()
-        myRigidbody.velocity = new Vector3(PI.moveInputH * moveSpeed, myRigidbody.velocity.y, 0);
+        //myRigidbody.velocity = new Vector3(PI.moveInputH * moveSpeed, myRigidbody.velocity.y, 0);
         myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, 0, PI.moveInputV * moveSpeed);
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            transform.Rotate(0,120*Time.deltaTime,0);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            transform.Rotate(0,-120*Time.deltaTime,0);
+        }
     }
 }
