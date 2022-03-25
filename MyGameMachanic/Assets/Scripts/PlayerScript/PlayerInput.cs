@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    private bool jumpInput;
-    private float moveInputV;
+    public bool jumpInput;
+    public float moveInputV;
 
 
     // Start is called before the first frame update

@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class PlayerWalk : MonoBehaviour
 {
-    public Rigidbody myRigidbody;       // Field for position through physics simulation
+    public Rigidbody myRigidbody;       // Field for position through physics simulation, also accesing the Rigidbody script
     public float moveSpeed = 5f;        // Field for Movement
+
+    public PlayerInput PI;      // Accesing Manually another script
     
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()
