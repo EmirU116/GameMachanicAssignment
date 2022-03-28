@@ -9,6 +9,8 @@ public class PlayerJump : MonoBehaviour
     [SerializeField] private float jumpForce = 500f;      // Field for Jumping    
 
     [SerializeField] private PlayerInput playerInput;
+
+    [SerializeField] private GroundChecker gc;
     
     // Start is called before the first frame update
     void Start()
@@ -21,7 +23,7 @@ public class PlayerJump : MonoBehaviour
     {   
         //Apply jump force
         //Preferably interact with physics in FixedUpdate()
-        if (playerInput.JumpInput)
+        if (playerInput.JumpInput && gc.isGrounded)
         {
             myRigidbody.AddForce(Vector3.up * jumpForce);
         }
