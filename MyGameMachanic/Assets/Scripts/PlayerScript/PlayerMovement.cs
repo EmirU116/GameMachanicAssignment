@@ -20,12 +20,12 @@ public class PlayerMovement : MonoBehaviour
         //Get move Input
         //Preferably Get Input in Update()
         //Assigning the Horizontal Movement
-        var moveInputV = Input.GetAxis("Horizontal");
+        var moveInput = Input.GetAxis("Horizontal");
         
         
         //Set move velocity
         //Preferably interact with physics in FixedUpdate()
-        myRigidbody.velocity = new Vector3(moveInputV * moveSpeed, myRigidbody.velocity.y, 0);
+        myRigidbody.velocity = new Vector3(moveInput * moveSpeed, myRigidbody.velocity.y, 0);
 
         //Get jump input
         //Preferably get input in Update()

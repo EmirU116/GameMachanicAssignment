@@ -7,7 +7,7 @@ public class PlayerWalk : MonoBehaviour
     [SerializeField] private Rigidbody myRigidbody;       // Field for position through physics simulation, also accesing the Rigidbody script
     [SerializeField] private float moveSpeed = 5f;        // Field for Movement
 
-    [SerializeField] private PlayerInput PI;      // Accesing Manually another script
+    [SerializeField] private PlayerInput PI;      // Accessing Manually another script
     
 
     // Update is called once per frame
@@ -15,16 +15,6 @@ public class PlayerWalk : MonoBehaviour
     {
         //Set move velocity
         //Preferably interact with physics in FixedUpdate()
-        //myRigidbody.velocity = new Vector3(PI.moveInputH * moveSpeed, myRigidbody.velocity.y, 0);
-        myRigidbody.velocity = new Vector3(myRigidbody.velocity.x, 0, PI.moveInputV * moveSpeed);
-
-        if (Input.GetKey(KeyCode.D))
-        {
-            transform.Rotate(0,120*Time.deltaTime,0);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            transform.Rotate(0,-120*Time.deltaTime,0);
-        }
+        myRigidbody.velocity = new Vector3(PI.moveInput * moveSpeed, myRigidbody.velocity.y, 0);
     }
 }

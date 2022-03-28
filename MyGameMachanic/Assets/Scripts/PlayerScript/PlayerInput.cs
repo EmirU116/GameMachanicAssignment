@@ -5,8 +5,7 @@ using UnityEngine;
 public class PlayerInput : MonoBehaviour
 {
     public bool jumpInput;
-    public float moveInputV;
-    public float moveInputH;
+    public float moveInput;
 
 
     // Start is called before the first frame update
@@ -25,7 +24,6 @@ public class PlayerInput : MonoBehaviour
         //Get move Input
         //Preferably Get Input in Update()
         //Assigning the Horizontal Movement
-        moveInputV = Input.GetAxis("Vertical");
-        moveInputH = Input.GetAxis("Horizontal");
+        moveInput = Input.GetAxis("Horizontal");
     }
 }
