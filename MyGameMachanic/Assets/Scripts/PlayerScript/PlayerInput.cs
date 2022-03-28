@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class PlayerInput : MonoBehaviour
 {
-    public bool jumpInput;
-    public float moveInput;
+    public bool JumpInput { get; private set; }
+    public float MoveInput { get; private set; }
 
 
     // Start is called before the first frame update
@@ -19,11 +19,11 @@ public class PlayerInput : MonoBehaviour
     {
         //Get jump input
         //Preferably get input in Update()
-        jumpInput = Input.GetKeyDown(KeyCode.Space);
+        JumpInput = Input.GetKeyDown(KeyCode.Space);
 
         //Get move Input
         //Preferably Get Input in Update()
         //Assigning the Horizontal Movement
-        moveInput = Input.GetAxis("Horizontal");
+        MoveInput = Input.GetAxis("Horizontal");
     }
 }

@@ -21,7 +21,7 @@ public class PlayerJump : MonoBehaviour
     {   
         //Apply jump force
         //Preferably interact with physics in FixedUpdate()
-        if (playerInput.jumpInput)
+        if (playerInput.JumpInput)
         {
             myRigidbody.AddForce(Vector3.up * jumpForce);
         }

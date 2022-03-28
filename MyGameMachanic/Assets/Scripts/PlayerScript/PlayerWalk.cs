@@ -15,6 +15,6 @@ public class PlayerWalk : MonoBehaviour
     {
         //Set move velocity
         //Preferably interact with physics in FixedUpdate()
-        myRigidbody.velocity = new Vector3(PI.moveInput * moveSpeed, myRigidbody.velocity.y, 0);
+        myRigidbody.velocity = new Vector3(PI.MoveInput * moveSpeed, myRigidbody.velocity.y, 0);
     }
 }
