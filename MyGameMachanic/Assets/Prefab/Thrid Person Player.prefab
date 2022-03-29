@@ -62,8 +62,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c9edbc6a676cf44dbb7c436e2076a32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpInput: 0
-  moveInputV: 0
 --- !u!1 &7752936488100203980
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,3 +289,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   myRigidbody: {fileID: 7752936488083719476}
   jumpForce: 500
+  playerInput: {fileID: 0}
+  gc: {fileID: 0}
