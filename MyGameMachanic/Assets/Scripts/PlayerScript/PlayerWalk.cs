@@ -8,6 +8,8 @@ public class PlayerWalk : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;        // Field for Movement
 
     [SerializeField] private PlayerInput PI;      // Accessing Manually another script
+
+    [SerializeField] private float normalSpeed = 5f;
     // Update is called once per frame
     void Update()
     {
@@ -18,6 +20,10 @@ public class PlayerWalk : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             moveSpeed = 20F;
+        }
+        else
+        {
+            moveSpeed = normalSpeed;
         }
     }
 }
