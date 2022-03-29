@@ -17,7 +17,7 @@ public class PlayerWalk : MonoBehaviour
         //Preferably interact with physics in FixedUpdate()
         myRigidbody.velocity = new Vector3(PI.MoveInput * moveSpeed, myRigidbody.velocity.y, 0);
 
-        if (Input.GetKeyDown(KeyCode.R))
+        if (Input.GetKey(KeyCode.R))
         {
             moveSpeed = 20F;
         }
