@@ -610,5 +610,9 @@ PrefabInstance:
       propertyPath: playerInput
       value: 
       objectReference: {fileID: 697175493}
+    - target: {fileID: 7752936488275379073, guid: 35832571727f79b429e3083762c654bd, type: 3}
+      propertyPath: dashCooldown
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35832571727f79b429e3083762c654bd, type: 3}
