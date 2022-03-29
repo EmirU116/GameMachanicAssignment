@@ -8,8 +8,6 @@ public class PlayerWalk : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;        // Field for Movement
 
     [SerializeField] private PlayerInput PI;      // Accessing Manually another script
-
-    private float dashSpeed = 20F;
     // Update is called once per frame
     void Update()
     {
@@ -19,7 +17,7 @@ public class PlayerWalk : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.R))
         {
-            moveSpeed = dashSpeed;
+            moveSpeed = 20F;
         }
     }
 }
