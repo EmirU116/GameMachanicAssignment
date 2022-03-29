@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class PlayerDash : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Rigidbody rb;
+    private PlayerWalk pw;
 
-    // Update is called once per frame
+    public float dashSpeed;
+    
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            
+        }
     }
 }

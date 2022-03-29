@@ -8,13 +8,18 @@ public class PlayerWalk : MonoBehaviour
     [SerializeField] private float moveSpeed = 5f;        // Field for Movement
 
     [SerializeField] private PlayerInput PI;      // Accessing Manually another script
-    
 
+    private float dashSpeed = 20F;
     // Update is called once per frame
     void Update()
     {
         //Set move velocity
         //Preferably interact with physics in FixedUpdate()
         myRigidbody.velocity = new Vector3(PI.MoveInput * moveSpeed, myRigidbody.velocity.y, 0);
+
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            moveSpeed = dashSpeed;
+        }
     }
 }
