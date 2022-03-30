@@ -29,12 +29,13 @@ public class PlayerWalk : MonoBehaviour
         
         if (Input.GetKeyDown(KeyCode.R))
         {
-            dashCooldown = Time.time;
             
-            if (dashCooldown <= 4 )
+            
+            if (Time.time >= 4 + dashCooldown)
             {
-                moveSpeed = 20F;
+                //moveSpeed = 20F;
                 transform.Translate(0,0,dashLenght * PI.MoveInput);
+                dashCooldown = Time.time;
             }
                         
         }
@@ -43,5 +44,9 @@ public class PlayerWalk : MonoBehaviour
             moveSpeed = normalSpeed;
         }
 
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = 20f;
+        }
     }
 }
